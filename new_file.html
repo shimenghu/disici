@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--<script>
+
+//
+//			function getSum(){
+//				var e=90,g=84,m=78;
+//				document.write("成绩和是"+(e+g+m));
+//			}
+//			getSum();
+//			
+//			function min(){
+//				var min=arguments[0];
+//				for(var i=0;i<arguments.length;i++)
+//				if(min>arguments[i]){
+//					min=arguments[i];
+//				}
+//				document.write(min);
+//			}
+//			min(20,34,-3,15,99,45,77);
+//	
+//			var num;
+//			function add(){
+//				for(num=1;num<=5;num++){
+//					document.write(num);
+//					if(num==5){
+//						break;
+//					}
+//				}
+//			}
+//			function showNum(){
+//				add();
+//				}
+//			showNum();
+			/*function person(name,age){
+				this.name=name;
+				this.age=age;
+				this.show=function(){
+					document.write(this.name+'的年龄是'+this.age); 
+				}
+				this.show=function(){
+					document.write(this.name+',年龄是'+this.age); 
+				}
+			}
+			var zhangsan=new person('张三',30);
+			zhangsan.show();
+			var tangwenjie=new person('唐文杰',13);
+			tangwenjie.show();
+			var zhangsan=new person('张三',20);
+			zhangsan.show();
+			var xiaoming={
+				name:"小明",
+				age:18,
+				sex:"男",
+				addr:"zhidian",
+				tel:"12345678",
+			    show:function(){
+			    	alerta("nihao")
+			    }
+			}
+			for(var x in xiaoming){
+				console.log(x+"="+xiaoming[x])
+			}*/
+			
+//			var txt="我是\'JavaScript\',JavaScript是一门弱类型语言"
+//			console.log(txt);
+//			console.log(txt.indexOf("Java"));
+//			console.log(txt.substr(15,25));
+//			console.log(txt.substring(28));
+//			console.log(txt.replace("JavaScript","张三"));
+//			var txt1=txt.substring(0,15);
+//			var tet2=txt.substring(15,32);
+//			console.log(txt1+tet2.toUpperCase());
+
+//			var a="12322";
+//			var b=a.split("");
+//			var c=b.reverse();
+//			var d=c.join();
+//			if(a==b){
+//				alert("是回文数")
+//			}else{
+//				alert("不是回文数")
+//			}
+//		var sp=["背包","运动衫","运动鞋","外套","腰包"]
+//		for(var i=0;i<sp.length;i++){
+//			document.write(sp[i]+"<br />")
+//		}
+//		sp.shift();
+//		sp.push("运动裤");
+//		for(var i=0;i<sp.length;i++){
+//			document.write(sp[i]+"<br />");
+//		}
+//		sp.	splice(2,0,"特步运动鞋");
+//		for(var i=0;i<sp.length;i++){
+//			document.write(sp[i]+"<br />");
+//		}
+//		document.write(sp.join("、"))
+		
+		</script>-->
+		<button onclick="xd()">点击查看信息</button>
+		<script>
+			var newss;
+			var closes;
+			function close_win(){
+				closes=newss.close();
+			}
+			function open_win(){
+				newss=window.open("navigator.html","new","height=450,width=450,")
+			}
+			
+			function xd(){
+				setTimeout(function time(){
+				open_win();
+				},3000);
+				
+				setTimeout(function time(){
+				close_win();
+				location.href="navigator.html";
+				},8000);
+			}
+			
+			
+		</script>
+	</body>
+</html>

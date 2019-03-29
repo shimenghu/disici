@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="demo">
+			<p id="p1">姓名:<input type="text"></p>
+			<p>年龄:<input type="text"></p>
+			<p>电话:<input type="text"></p>
+			<p>住址:<input type="text"></p>
+			<button>确认</button>
+		</div>
+	</body>
+	<script>
+		var demo=document.getElementById("demo");
+		var p1=document.createElement("p1");
+		var p=document.createTextNode("性别:");
+		demo.insertBefore(P1,demo.lastChild);
+		p1.appendChild(p);
+		console.log(demo.children);
+		var count=0;
+		for(var i=0;i<demo.childNodes.length;i++){
+			if(demo.childNodes[i]){
+				count++;
+			}
+			console.log("第"+i+"个节点名称是:"+demo.childNodes[i].nodeName);
+		}
+		console.log(count);
+	</script>
+</html>
